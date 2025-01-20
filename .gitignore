@@ -1,2 +1,6 @@
 dataset/
 .venv/
+.vnew/
+old_scripts/
+*.h5ad
+*.gmt
