@@ -1,6 +1,35 @@
-# In-house  
-In general, this repository is part of the bpEXA project at the *University of Applied Sciences Leiden*.  
+# Read me
 
-The main task, as of November 26, 2024, is to create a script that can, based on the provided data, replicate the following figure (specifically element 4A):  
+This repository is part of the educational project for the "bpEXA" course at the Faculty of Bioinformatics, Leiden University of Applied Sciences.
 
-![](https://www.cell.com/cms/10.1016/j.crmeth.2023.100488/asset/37013fa2-f340-4e9c-81eb-36123bc5e615/main.assets/gr4_lrg.jpg)  
+## Description
+
+The script in this repository is an adapted copy of the [basic tutorial for query-to-reference mapping using expiMap](https://docs.scarches.org/en/latest/expimap_surgery_pipeline_basic.html). The primary purpose of the script is to train a model to minimize batch effects in bioinformatics data.
+
+## Requirements
+
+To run the script with **scArches version 0.6.1**, you will need:
+
+- A development environment with **Python 3.12**.
+
+### Important Note
+
+Starting from January 2025, errors may occur when installing **scArches** due to updates to its dependency libraries. Therefore, it is strongly recommended to use the `requirements.txt` file included in this repository to set up a virtual development environment and install all necessary dependencies.
+
+## Installation
+
+1. Ensure that Python 3.12 is installed on your system.
+2. Create and activate a virtual environment:
+    
+    ```bash
+    python3.12 -m venv venv
+    source venv/bin/activate  # for Linux/MacOS
+    venv\Scripts\activate  # for Windows
+    ```
+    
+3. Install the dependencies from `requirements.txt`:
+    
+    ```bash
+    pip install -r requirements.txt
+    ```
+    
