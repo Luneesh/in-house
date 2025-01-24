@@ -33,3 +33,10 @@ Starting from January 2025, errors may occur when installing **scArches** due to
     pip install -r requirements.txt
     ```
     
+## Updates
+### Update 24.01.2025
+During the work, it was discovered that when loading the `hiPSC.h5ad` file, the matrix `X` contains floating-point values. This was fixed in the script `expimap_model_training2.ipynb`; however, no changes were made to the original script since the obtained figures had already been presented at the bpEXA project presentation (see below).
+![](metadata/expiMap1_output_cell_types.png)
+![](metadata/expiMap1_output_seurat_clusters.png)
+
+Additionally, two scripts, `travae1_model_training.ipynb` and `travae2_model_training.ipynb`, were added, where the `trVAE` model was used instead of the Expimap model. In the case of the second algorithm, an approach was also used where the missing genes in the `hiPSC.h5ad` file were supplemented with genes from the `tyser.h5ad` file.
